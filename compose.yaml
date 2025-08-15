@@ -1,0 +1,7 @@
+services:
+  structurizr:
+    image: dockerio.docker.bin.sbb.ch/structurizr/lite:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/local/structurizr

@@ -1,0 +1,179 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedDate" : "2025-08-15T14:11:01Z",
+  "model" : {
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "3",
+          "name" : "Service",
+          "properties" : {
+            "structurizr.dsl.identifier" : "system.othermodule.service"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "2",
+        "name" : "OtherModule",
+        "properties" : {
+          "structurizr.dsl.identifier" : "system.othermodule"
+        },
+        "tags" : "Element,Container"
+      }, {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "5",
+          "name" : "SomeAPI",
+          "properties" : {
+            "structurizr.dsl.identifier" : "system.somemodule.someapi"
+          },
+          "relationships" : [ {
+            "description" : "SomeMessage",
+            "destinationId" : "3",
+            "id" : "7",
+            "sourceId" : "5",
+            "tags" : "Relationship",
+            "technology" : "Solace"
+          }, {
+            "description" : "SomeMessage",
+            "destinationId" : "2",
+            "id" : "8",
+            "linkedRelationshipId" : "7",
+            "sourceId" : "5",
+            "technology" : "Solace"
+          } ],
+          "tags" : "Element,Component,API"
+        }, {
+          "documentation" : { },
+          "id" : "6",
+          "name" : "OtherAPI",
+          "properties" : {
+            "structurizr.dsl.identifier" : "system.somemodule.otherapi"
+          },
+          "relationships" : [ {
+            "description" : "OtherMessage",
+            "destinationId" : "3",
+            "id" : "11",
+            "sourceId" : "6",
+            "tags" : "Relationship",
+            "technology" : "Solace"
+          }, {
+            "description" : "OtherMessage",
+            "destinationId" : "2",
+            "id" : "12",
+            "linkedRelationshipId" : "11",
+            "sourceId" : "6",
+            "technology" : "Solace"
+          } ],
+          "tags" : "Element,Component,API"
+        } ],
+        "documentation" : { },
+        "id" : "4",
+        "name" : "SomeModule",
+        "properties" : {
+          "structurizr.dsl.identifier" : "system.somemodule"
+        },
+        "relationships" : [ {
+          "description" : "SomeMessage",
+          "destinationId" : "3",
+          "id" : "9",
+          "linkedRelationshipId" : "7",
+          "sourceId" : "4",
+          "technology" : "Solace"
+        }, {
+          "description" : "SomeMessage",
+          "destinationId" : "2",
+          "id" : "10",
+          "linkedRelationshipId" : "7",
+          "sourceId" : "4",
+          "technology" : "Solace"
+        } ],
+        "tags" : "Element,Container"
+      } ],
+      "documentation" : { },
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "SomeSystem",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Workspace",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJXb3Jrc3BhY2UiIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCiAgICAhaW1wbGllZFJlbGF0aW9uc2hpcHMgdHJ1ZQoKICAgIG1vZGVsIHsKICAgICAgICBzeXN0ZW0gPSBTb2Z0d2FyZVN5c3RlbSAiU29tZVN5c3RlbSIgewogICAgICAgICAgICBvdGhlcm1vZHVsZSA9IENvbnRhaW5lciAiT3RoZXJNb2R1bGUiIHsKICAgICAgICAgICAgICAgIHNlcnZpY2UgPSBDb21wb25lbnQgIlNlcnZpY2UiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgc29tZW1vZHVsZSA9IENvbnRhaW5lciAiU29tZU1vZHVsZSIgewogICAgICAgICAgICAKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgc29tZWFwaSA9IENvbXBvbmVudCAiU29tZUFQSSIgewogICAgICAgICAgICAgICAgICAgIHRhZ3MgIkFQSSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBvdGhlcmFwaSA9IENvbXBvbmVudCAiT3RoZXJBUEkiIHsKICAgICAgICAgICAgICAgICAgICB0YWdzICJBUEkiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICAKICAgICAgICBzeXN0ZW0uc29tZW1vZHVsZS5zb21lYXBpIC0+IHN5c3RlbS5vdGhlcm1vZHVsZS5zZXJ2aWNlICJTb21lTWVzc2FnZSIgIlNvbGFjZSIKICAgICAgICBzeXN0ZW0uc29tZW1vZHVsZS5vdGhlcmFwaSAtPiBzeXN0ZW0ub3RoZXJtb2R1bGUuc2VydmljZSAiT3RoZXJNZXNzYWdlIiAiU29sYWNlIgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBjb21wb25lbnQgc3lzdGVtLm90aGVybW9kdWxlIGNvbXBvbmVudC1vdGhlcm1vZHVsZSAiT3RoZXIgTW9kdWxlIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KICAgICAgICBjb21wb25lbnQgc3lzdGVtLnNvbWVtb2R1bGUgY29tcG9uZW50LXNvbWVtb2R1bGUgIlNvbWUgTW9kdWxlIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiQVBJIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBjaXJjbGUKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQ=="
+  },
+  "views" : {
+    "componentViews" : [ {
+      "containerId" : "2",
+      "description" : "Other Module",
+      "dimensions" : {
+        "height" : 811,
+        "width" : 1620
+      },
+      "elements" : [ {
+        "id" : "3",
+        "x" : 949,
+        "y" : 171
+      }, {
+        "id" : "4",
+        "x" : 199,
+        "y" : 171
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "component-othermodule",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "9",
+        "vertices" : [ {
+          "x" : 795,
+          "y" : 245
+        } ]
+      } ]
+    }, {
+      "containerId" : "4",
+      "description" : "Some Module",
+      "dimensions" : {
+        "height" : 1561,
+        "width" : 1620
+      },
+      "elements" : [ {
+        "id" : "2",
+        "x" : 970,
+        "y" : 472
+      }, {
+        "id" : "5",
+        "x" : 220,
+        "y" : 172
+      }, {
+        "id" : "6",
+        "x" : 220,
+        "y" : 772
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "key" : "component-somemodule",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "12"
+      }, {
+        "id" : "8"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "component-othermodule",
+      "styles" : {
+        "elements" : [ {
+          "shape" : "Circle",
+          "tag" : "API"
+        } ]
+      },
+      "terminology" : { }
+    }
+  }
+}
